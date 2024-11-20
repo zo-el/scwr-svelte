@@ -1,0 +1,7 @@
+---
+manifest_version: "1"
+name: scwr-prototype
+ui:
+  bundled: "../ui/dist.zip"
+happ_manifest:
+  bundled: "./scwr-prototype.happ"

@@ -1,0 +1,21 @@
+---
+manifest_version: "1"
+name: scwr
+integrity:
+  network_seed: ~
+  properties: ~
+  origin_time: 1732048585255983
+  zomes:
+    - name: runner_integrity
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/runner_integrity.wasm"
+      dependencies: ~
+      dylib: ~
+coordinator:
+  zomes:
+    - name: runner
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/runner.wasm"
+      dependencies:
+        - name: runner_integrity
+      dylib: ~
